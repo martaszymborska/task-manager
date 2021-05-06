@@ -12,19 +12,23 @@
             </li>
             `;
         }
-        document.querySelector(".js-taskList").innerHTML = htmlString;
+        document.querySelector(".js-tasksList").innerHTML = htmlString;
     };
     const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const newTaskContent = document.querySelector(".js-newTask").nodeValue.trim();
-if (newTaskContent === "") {
-    return;
-}
-    });
-};
-init();
+            event.preventDefault();
+            const newTaskContent = document.querySelector(".js-newTask").value.trim();
+            if (newTaskContent === "") {
+                return;
+            };
+            tasks.push({
+                content: newTaskContent,
+            });
+            render()
+        });
+    };
+    init();
 }
