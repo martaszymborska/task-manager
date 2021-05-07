@@ -14,6 +14,12 @@
         }
         document.querySelector(".js-tasksList").innerHTML = htmlString;
     };
+
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent,
+        });
+    }
     const init = () => {
 
 
@@ -24,10 +30,10 @@
             if (newTaskContent === "") {
                 return;
             };
-            tasks.push({
-                content: newTaskContent,
-            });
-            render()
+
+            addNewTask(newTaskContent);
+           
+            render();
         });
     };
     init();
