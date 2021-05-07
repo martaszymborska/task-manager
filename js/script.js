@@ -15,7 +15,7 @@
         document.querySelector(".js-tasksList").innerHTML = htmlString;
     };
     const init = () => {
-        render();
+
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", (event) => {
