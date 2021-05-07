@@ -19,7 +19,9 @@
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-            <li>
+            <li
+            ${task.done ? " style=\"text-decoration: line-through\"":""}
+            >
             <button class="js-tick"></button>
             <button class="js-remove"></button>
             ${task.content}
@@ -27,15 +29,17 @@
             `;
         }
         document.querySelector(".js-tasksList").innerHTML = htmlString;
-    
 
-    const removeButtons = document.querySelectorAll(".js-remove");
-    removeButtons.forEach((removeButton, index) => {
-        removeButton.addEventListener("click", () => {
-            removeTask(index);
+
+        const removeButtons = document.querySelectorAll(".js-remove");
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+            });
         });
-    });
     };
+
+    
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -56,5 +60,5 @@
 
     };
 
-init();
+    init();
 }
