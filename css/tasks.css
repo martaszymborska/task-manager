@@ -1,12 +1,60 @@
-.tasksList {
-    list-style: none;
+
+.taskList {
+    list-style-type: none;
+    margin: 0 auto 20px;
+    padding: 40px 20px 20px;
 }
 
-.list__item {
+.taskList__item {
+    padding: 10px;
     display: grid;
-    grid-gap: 60px;
+    grid-gap: 20px;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
 }
 
-.list__item--done {
+.taskList__span {
+    color: #333;
+    word-break: break-all;
+}
+
+.taskList__span--done {
     text-decoration: line-through;
+}
+
+.taskList__button {
+    padding: 5px 10px;
+    justify-self: center;
+    border: none;
+}
+
+.taskList__buttonSpan {
+    opacity: 0;
+}
+
+.taskList__buttonSpan--done {
+    opacity: 1;
+}
+
+.taskList__button:hover {
+    cursor: pointer;
+}
+
+.taskList__button--done {
+    background-color: #090;
+    color: #fff;
+}
+
+.taskList__button--done:hover {
+    background-color: #0c0;
+}
+
+.taskList__button--remove {
+    background-color: #f00;
+    color: #fff;
+}
+
+.taskList__button--remove:hover {
+    background-color: #f60;
 }
