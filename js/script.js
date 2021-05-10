@@ -19,7 +19,7 @@
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !task[taskIndex].done;
         render();
-    }
+    };
 
 
     const bindEvents = () => {
