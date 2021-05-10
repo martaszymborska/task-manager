@@ -21,6 +21,18 @@
         render();
     };
 
+    const toggleTaskContentDone = (taskContent, taskIndex) => {
+        if (task[taskIndex].done) {
+            taskContent.classList.add("taskList__span--done");
+        }
+    };
+
+    const toggleTaskButtonTextDone = (taskButtonText, taskIndex) => {
+        if (task[taskIndex].done) {
+            taskButtonText.classList.add("taskList__buttonSpan--done");
+        }
+    };
+
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -39,6 +51,17 @@
         });
     };
 
+    const bindContentEvents = () => {
+    const taskContents = document.querySelectorAll(".js-taskContent");
+    taskContents.forEach((taskContent, index) => {
+        toggleTaskContentDone(taskContent, index);
+    });
+
+    const taskButtonTexts = document.querySelectorAll(".js-taskButtonText");
+    taskButtonTexts.forEach((taskButtonTexts, index) => {
+        toggleTaskButtonTextDone(taskButtonText, index);
+    });
+    };
 
     const render = () => {
         let htmlString = "";
@@ -59,10 +82,11 @@
             </li>
             `;
         }
-    
-    document.querySelector(".js-tasksList").innerHTML = htmlString;
 
-    bindEvents();
+        document.querySelector(".js-tasksList").innerHTML = htmlString;
+        bindEvents();
+        bindContentEvents();
+        
     };
 
 
