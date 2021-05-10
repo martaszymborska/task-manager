@@ -63,6 +63,9 @@
     });
     };
 
+    
+    
+
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
@@ -89,10 +92,16 @@
         
     };
 
+    const clearInput = (newTask) => {
+        newTask.value = "";
+        newTask.focus();
+    }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        const newTaskElement = document.querySelector(".js-newTask");
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        clearInput(newTaskElement);
         if (newTaskContent === "") {
             return;
         }
