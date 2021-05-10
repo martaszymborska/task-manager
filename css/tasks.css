@@ -42,7 +42,7 @@
 }
 
 .taskList__button--done {
-    background-color: #090;
+    background-color: #008700;
     color: #fff;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .taskList__button--remove {
-    background-color: #f00;
+    background-color:#ea3131;
     color: #fff;
 }
 
