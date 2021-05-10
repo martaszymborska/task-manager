@@ -17,12 +17,12 @@
 
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !task[taskIndex].done;
+        tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     };
 
     const toggleTaskContentDone = (taskContent, taskIndex) => {
-        if (task[taskIndex].done) {
+        if (tasks[taskIndex].done) {
             taskContent.classList.add("taskList__span--done");
         }
     };
@@ -70,7 +70,7 @@
             <li
             class="taskListItem">
             
-            <button class="taskList__button taskListButton--done js-done">
+            <button class="taskList__button taskList__button--done js-done">
             <span class="taskList__buttonSpan js-taskButtonText">V</span>
             </button>
             <span class="taskList__span js-taskContent">
