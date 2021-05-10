@@ -1,0 +1,12 @@
+.tasksList {
+    list-style: none;
+}
+
+.list__item {
+    display: grid;
+    grid-gap: 60px;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
