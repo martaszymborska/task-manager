@@ -13,7 +13,7 @@
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
-    }
+    };
 
 
     const toggleTaskDone = (taskIndex) => {
@@ -45,10 +45,16 @@
         for (const task of tasks) {
             htmlString += `
             <li
-            ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-            >
-            <button class="js-done">done</button>
-            <button class="js-remove">remove</button>
+            class="taskListItem">
+            
+            <button class="taskList__button taskListButton--done js-done">
+            <span class="taskList__buttonSpan js-taskButtonText">V</span>
+            </button>
+            <span class="taskList__span js-taskContent">
+            ${task.content}
+            </span>
+            <button class="taskList__button taskList__button--remove js-remove">remove
+            </button>
             ${task.content}
             </li>
             `;
