@@ -23,13 +23,13 @@
 
     const toggleTaskContentDone = (taskContent, taskIndex) => {
         if (tasks[taskIndex].done) {
-            taskContent.classList.add("taskList__span--done");
+            taskContent.classList.add("tasksList__span--done");
         }
     };
 
     const toggleTaskButtonTextDone = (taskButtonText, taskIndex) => {
         if (task[taskIndex].done) {
-            taskButtonText.classList.add("taskList__buttonSpan--done");
+            taskButtonText.classList.add("tasksList__buttonSpan--done");
         }
     };
 
@@ -52,12 +52,12 @@
     };
 
     const bindContentEvents = () => {
-    const taskContents = document.querySelectorAll(".js-taskContent");
+    const taskContents = document.querySelectorAll(".js-tasksContent");
     taskContents.forEach((taskContent, index) => {
         toggleTaskContentDone(taskContent, index);
     });
 
-    const taskButtonTexts = document.querySelectorAll(".js-taskButtonText");
+    const taskButtonTexts = document.querySelectorAll(".js-tasksButtonText");
     taskButtonTexts.forEach((taskButtonTexts, index) => {
         toggleTaskButtonTextDone(taskButtonText, index);
     });
