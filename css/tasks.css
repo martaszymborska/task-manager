@@ -1,72 +1,76 @@
 
 
 
-.taskList__subheader {
+.tasksList__subheader {
     margin: 7px;
     padding: 20px; 10px;
     background-color: #fff:
 }
-.taskList {
+.tasksList {
     list-style: none;
     margin: 0 auto 20px;
     padding: 40px 20px 10px 20px;
     background-color: #fff;
 }
 
-.taskList__item {
+.tasksList__item {
     padding: 10px;
+    margin-bottom: 10px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 30px 1fr 30px;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #aaa;
-    list-style-type: none;
+    list-style: none;
 }
 
-.taskList__span {
+.tasksList__span {
     color: #333;
-    word-break: break-all;
     padding: 10px;
+    display: flex;
     justify-content: center;
     overflow-wrap: anywhere
+
 }
 
-.taskList__span--done {
+.tasksList__span--done {
     text-decoration: line-through;
+    list-style: none;
 }
 
-.taskList__button {
+.tasksList__button {
     padding: 5px 10px;
     justify-self: center;
     border: none;
 }
 
-.taskList__buttonSpan {
+.tasksList__buttonSpan {
     opacity: 0;
 }
 
-.taskList__buttonSpan--done {
+.tasksList__buttonSpan--done {
     opacity: 1;
 }
 
-.taskList__button:hover {
+.tasksList__button:hover {
     cursor: pointer;
 }
 
-.taskList__button--done {
+.tasksList__button--done {
     background-color: #008700;
     color: #fff;
 }
 
-.taskList__button--done:hover {
+.tasksList__button--done:hover {
     background-color: #0c0;
 }
 
-.taskList__button--remove {
+.tasksList__button--remove {
     background-color:#ea3131;
     color: #fff;
 }
 
-.taskList__button--remove:hover {
+.tasksList__button--remove:hover {
     background-color: #f60;
 }
