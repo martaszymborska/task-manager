@@ -14,15 +14,13 @@
 }
 
 .tasksList__item {
-    padding: 10px;
     margin-bottom: 10px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 30px 1fr 30px;
+    grid-template-columns: 33px 1fr 33px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #aaa;
-    list-style: none;
 }
 
 .tasksList__span {
@@ -60,6 +58,7 @@
 .tasksList__button--done {
     background-color: #008700;
     color: #fff;
+    grid-column: 1;
 }
 
 .tasksList__button--done:hover {
@@ -69,6 +68,7 @@
 .tasksList__button--remove {
     background-color:#ea3131;
     color: #fff;
+    grid-column: 3;
 }
 
 .tasksList__button--remove:hover {
