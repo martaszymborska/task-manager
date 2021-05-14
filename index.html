@@ -13,6 +13,7 @@
     <link href="css/tasks.css" rel="stylesheet">
     <link href="css/addTaskButton.css" rel="stylesheet">
     <link href="css/container.css" rel="stylesheet">
+    <link href="ccc/flex.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -21,14 +22,14 @@
 
 <body>
     <h1 class="header">Lista zadań</h1>
-    <section class="container">
+    <section class="container flex">
         <h2 class="subheader">Dodaj nowe zadanie</h2>
         <form class="form js-form">
             <input name="newTask" class="newTask js-newTask" placeholder="Co jest do zrobienia?" autofocus>
             <button class="addTaskButton js-addTaskButton"> Dodaj zadanie</button>
         </form>
     </section>
-    <section class="container">
+    <section class="container flex">
     <h2 class="subheader">Lista zadań</h2>
     <ul class="tasksList js-tasksList"></ul>
     </section>
