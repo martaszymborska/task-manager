@@ -11,9 +11,7 @@
         crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/tasks.css" rel="stylesheet">
-    <link href="css/addTaskButton.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
-    <link href="ccc/flex.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -22,16 +20,19 @@
 
 <body>
     <h1 class="header">Lista zadań</h1>
-    <section class="container flex">
-        <h2 class="subheader">Dodaj nowe zadanie</h2>
+    <section>
         <form class="form js-form">
-            <input name="newTask" class="newTask js-newTask flex__item" placeholder="Co jest do zrobienia?" autofocus>
-            <button class="addTaskButton  flex__item js-addTaskButton"> Dodaj zadanie</button>
+            <h2 class="form__subheader">Dodaj nowe zadanie</h2>
+            <div class="form__container">
+                <input name="form__input" class="newTask js-newTask flex__item" placeholder="Co jest do zrobienia?"
+                    autofocus>
+                <button class="form__addTaskButton  flex__item js-addTaskButton"> Dodaj zadanie</button>
+            </div>
         </form>
     </section>
-    <section class="container flex">
-    <h2 class="subheader">Lista zadań</h2>
-    <ul class="tasksList js-tasksList"></ul>
+    <section>
+        <h2 class="taskList__subheader">Lista zadań</h2>
+        <ul class="tasksList js-tasksList"></ul>
     </section>
 </body>
 

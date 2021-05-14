@@ -1,4 +1,4 @@
-.container {
+.form__container {
     background-color: white;
     padding: 20px 50px;
     margin: 15px;
@@ -6,22 +6,26 @@
     justify-content: space-between;
 }
 
-.header {
-    margin: 15px;   
+.form__header {
+    margin: 15px;
     padding: 20px 10px;
     margin-bottom: 5px;
     background-color: #fff;
 }
 
-.subheader {
-    margin: 7px;
+.form__input {
+    padding: 10px;
+    flex-grow: 1;
+    margin-right: 10px;
+    border: 1px solid #ddd;
 }
 
-.addTaskButton {
+.form__addTaskButton {
     background-color: teal;
     border: none;
     color: white;
     padding: 10px 5px;
+    flex-basis: 155px;
+    align-self: flex-end;
 }
 
-.
