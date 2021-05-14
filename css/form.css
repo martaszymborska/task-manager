@@ -1,0 +1,20 @@
+.container {
+    background-color: white;
+    padding: 20px 50px;
+    margin: 15px;
+}
+
+.header {
+    margin: 15px;   
+}
+
+.subheader {
+    margin: 7px;
+}
+
+.addTaskButton {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 10px 5px;
+}
