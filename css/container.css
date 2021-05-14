@@ -1,5 +1,13 @@
 .container {
     background-color: white;
     padding: 20px 50px;
-    margin: 10px;
+    margin: 15px;
+}
+
+.header {
+    margin: 15px;   
+}
+
+.subheader {
+    margin: 7px;
 }
