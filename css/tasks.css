@@ -3,11 +3,14 @@
 
 .taskList__subheader {
     margin: 7px;
+    padding: 20px; 10px;
+    background-color: #fff:
 }
 .taskList {
-    list-style-type: none;
+    list-style: none;
     margin: 0 auto 20px;
-    padding: 40px 20px 20px;
+    padding: 40px 20px 10px 20px;
+    background-color: #fff;
 }
 
 .taskList__item {
@@ -23,6 +26,9 @@
 .taskList__span {
     color: #333;
     word-break: break-all;
+    padding: 10px;
+    justify-content: center;
+    overflow-wrap: anywhere
 }
 
 .taskList__span--done {
