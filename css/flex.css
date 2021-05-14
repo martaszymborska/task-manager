@@ -1,0 +1,6 @@
+.flex {
+    display: flex;
+    max-width: 600px;
+    border: 1px solid;
+    padding: 20 px;
+    }
