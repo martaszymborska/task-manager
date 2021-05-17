@@ -12,6 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/tasks.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
@@ -22,9 +23,9 @@
 <body>
     <h1 class="header">Lista zadań</h1>
     <section>
+        <h2 class="section__header">Dodaj nowe zadanie</h2>
         <form class="form js-form">
             <div class="form__container">
-                <h2 class="form__subheader">Dodaj nowe zadanie</h2>
                 <input name="form__input" class="newTask js-newTask flex__item" placeholder="Co jest do zrobienia?"
                     autofocus>
                 <button class="form__addTaskButton  flex__item js-addTaskButton"> Dodaj zadanie</button>
@@ -32,7 +33,7 @@
         </form>
     </section>
     <section>
-        <h2 class="tasksList__subheader">Lista zadań</h2>
+        <h2 class="section__header">Lista zadań</h2>
         <ul class="tasksList js-tasksList"></ul>
     </section>
 </body>
