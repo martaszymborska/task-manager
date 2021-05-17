@@ -1,22 +1,13 @@
 .form__container {
     background-color: white;
-    padding: 20px 50px;
-    margin: 15px;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-}
-
-.form__header {
-    margin: 15px;
-    padding: 20px 10px;
-    margin-bottom: 5px;
-    background-color: #fff;
+    flex-wrap: wrap;
 }
 
 .form__input {
     padding: 10px;
     flex-grow: 1;
-    margin-right: 10px;
     border: 1px solid #ddd;
 }
 
@@ -24,8 +15,6 @@
     background-color: teal;
     border: none;
     color: white;
-    padding: 10px 5px;
-    flex-basis: 155px;
-    align-self: flex-end;
+    padding: 10 px;
+    margin-left: 15px;
 }
-
