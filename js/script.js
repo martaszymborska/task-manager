@@ -1,7 +1,5 @@
 {
-
-    const tasks = [
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -52,19 +50,17 @@
     };
 
     const bindContentEvents = () => {
-    const taskContents = document.querySelectorAll(".js-tasksContent");
-    taskContents.forEach((taskContent, index) => {
-        toggleTaskContentDone(taskContent, index);
-    });
+        const taskContents = document.querySelectorAll(".js-tasksContent");
+        taskContents.forEach((taskContent, index) => {
+            toggleTaskContentDone(taskContent, index);
+        });
 
-    const taskButtonTexts = document.querySelectorAll(".js-tasksButtonText");
-    taskButtonTexts.forEach((taskButtonTexts, index) => {
-        toggleTaskButtonTextDone(taskButtonText, index);
-    });
+        const taskButtonTexts = document.querySelectorAll(".js-tasksButtonText");
+        taskButtonTexts.forEach((taskButtonTexts, index) => {
+            toggleTaskButtonTextDone(taskButtonText, index);
+        });
     };
 
-    
-    
 
     const render = () => {
         let htmlString = "";
@@ -74,7 +70,6 @@
             class="tasksListItem">
             
             <button class="tasksList__button tasksList__button--done js-done">
-            <span class="tasksList__buttonSpan js-tasksButtonText">&check;</span>
             <span class="tasksList_buttonSpan js-tasksButtonText">✔</span>
             </button>
             <span class="tasksList__span js-tasksContent">
@@ -82,7 +77,6 @@
             </span>
             <button class="tasksList__button tasksList__button--remove js-remove"> 🗑
             </button>
-            ${task.content}
             </li>
             `;
         }
@@ -90,7 +84,7 @@
         document.querySelector(".js-tasksList").innerHTML = htmlString;
         bindEvents();
         bindContentEvents();
-        
+
     };
 
     const clearInput = (newTask) => {
