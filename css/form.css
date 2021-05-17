@@ -2,19 +2,49 @@
     background-color: white;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px){
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .form__input {
     padding: 10px;
-    flex-grow: 1;
+    display: flex;
+    flex-grow: 5;
+    margin-right: 10px;
     border: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+    .form__input {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .form__addTaskButton {
     background-color: teal;
     border: none;
     color: white;
-    padding: 10 px;
+    padding: 10px;
     margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .form__addTaskButton {
+        width: 100%;
+        flex-basis: auto;
+        margin-top: 10px;
+    }
+}
+
+.form__addTaskButton:hover {
+    background-color: hsl(180, 100%, 35%);
 }
