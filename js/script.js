@@ -19,19 +19,6 @@
         render();
     };
 
-    const toggleTaskContentDone = (taskContent, taskIndex) => {
-        if (tasks[taskIndex].done) {
-            taskContent.classList.add("tasksList__span--done");
-        }
-    };
-
-    const toggleTaskButtonTextDone = (taskButtonText, taskIndex) => {
-        if (task[taskIndex].done) {
-            taskButtonText.classList.add("tasksList__buttonSpan--done");
-        }
-    };
-
-
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
@@ -67,18 +54,18 @@
         for (const task of tasks) {
             htmlString += `
             <li
-            class="tasksListItem">
-            
+            class="tasksList__item">
             <button class="tasksList__button tasksList__button--done js-done">
-            <span class="tasksList_buttonSpan js-tasksButtonText">✔</span>
-            </button>
-            <span class="tasksList__span js-tasksContent">
+            ${task.done ? "✓" : " "}
+         </button>
+         <span class="tasksList__span"
+            ${task.done ? "tasksList__span--done\"" : "\""}
+          >
             ${task.content}
-            </span>
-            <button class="tasksList__button tasksList__button--remove js-remove"> 🗑
-            </button>
-            </li>
-            `;
+         </span>
+         <button class="tasksList__button tasksList__button--remove js-remove">🗑</button>
+      </li>
+      `;
         }
 
         document.querySelector(".js-tasksList").innerHTML = htmlString;
