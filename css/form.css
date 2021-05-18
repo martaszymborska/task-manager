@@ -48,3 +48,7 @@
 .form__addTaskButton:hover {
     background-color: hsl(180, 100%, 35%);
 }
+
+.form__addTaskButton:active {
+    background-color: hsl(180, 96%, 40%);
+}
