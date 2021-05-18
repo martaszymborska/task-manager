@@ -43,6 +43,10 @@
     background-color: #0c0;
 }
 
+.tasksList__button--done:active {
+    background-color: rgb(4, 223, 4);
+}
+
 .tasksList__button--remove {
     grid-column: 3;
     background-color: #ea3131;
@@ -51,4 +55,8 @@
 
 .tasksList__button--remove:hover {
     background-color: #f60;
+}
+
+.tasksList__button--remove:active {
+    background-color: rgb(223, 90, 2);
 }
