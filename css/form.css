@@ -1,54 +1,39 @@
-.form__container {
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (max-width: 767px){
-    .form__container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-.form__input {
-    padding: 20px;
-    display: flex;
-    flex-grow: 1;
-    margin-right: 10px;
-    border: 1px solid #ddd;
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1 fr;
+    }
     .form__input {
-        width: 100%;
-        margin-right: 0;
+        padding: 10px;
+        border: 1px solid #ddd;
     }
-}
-
-.form__addTaskButton {
-    background-color: teal;
-    border: none;
-    color: white;
-    padding: 10px;
-    margin-left: 15px;
-}
-
-@media (max-width: 767px) {
+    @media (max-width: 767px) {
+        .form__input {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
     .form__addTaskButton {
-        width: 100%;
-        flex-basis: auto;
-        margin-top: 10px;
+        background-color: teal;
+        border: none;
+        color: white;
+        padding: 10px;
     }
-}
-
-.form__addTaskButton:hover {
-    background-color: hsl(180, 100%, 35%);
-}
-
-.form__addTaskButton:active {
-    background-color: hsl(180, 96%, 40%);
-}
+    @media (max-width: 767px) {
+        .form__addTaskButton {
+            width: 100%;
+            flex-basis: auto;
+            margin-top: 10px;
+        }
+    }
+    .form__addTaskButton:hover {
+        background-color: hsl(180, 100%, 35%);
+    }
+    .form__addTaskButton:active {
+        background-color: hsl(180, 96%, 40%);
+    }
