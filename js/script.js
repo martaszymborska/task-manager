@@ -13,7 +13,6 @@
         render();
     };
 
-
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
@@ -47,7 +46,6 @@
             toggleTaskButtonTextDone(taskButtonText, index);
         });
     };
-
 
     const render = () => {
         let htmlString = "";
@@ -94,7 +92,6 @@
         render();
 
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
 
     };
