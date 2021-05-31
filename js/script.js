@@ -55,7 +55,7 @@
         });
     };
 
-    const renderTasks = () => {
+    const render = () => {
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
